@@ -7,8 +7,13 @@
 	<!-- Fonts -->
 
 	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="style.css">
 
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Scripts -->
+	
 
 </head>
 <body>
@@ -51,7 +56,53 @@
 			</div>
 		</div>
 	</nav>
+	
+	<!-- Slider -->
+	<div class="slick">
+		<ul class="slides">
+	      <li>
+	      <div class="caption1">
+		        <img src="images/1.jpg">
+		          <h3>Text</h3>
+		          <h5 class="light1">Text</h5>
+	        </div>
+	      </li>
+	      <li>
+	      	<div class="caption2">
+		        <img src="images/2.jpg">
+		          <h3>Text</h3>
+		          <h5 class="light2">Text</h5>
+	        </div>
+	      </li>
+	      <li>
+	      	<div class="caption3">
+		        <img src="images/3.jpg">
+		          <h3>Text</h3>
+		          <h5 class="light3">Text</h5>
+	        </div>
+	      </li>
+	      <li>
+	      	<div class="caption4">
+		        <img src="images/4.jpg">
+		          <h3>Text</h3>
+		          <h5 class="light4">Text</h5>
+	        </div>
+	      </li>
+    	</ul>
+	</div>
 
+<!-- JS messages -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<script type="text/javascript">
+	$('.slides').slick({
+ 	  dots: true,
+	  infinite: true,
+	  speed: 800,
+	  autoplay: true
+	});
+</script>
 
 	
 
