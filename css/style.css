@@ -59,7 +59,7 @@
 		}
 
 			.logo {
-				font-size: 42px;
+				font-size: 2.65rem;
 				font-family: 'Hagin Caps Medium';
 				color: #ae9277;
 				text-transform: none;
@@ -71,7 +71,7 @@
 			}
 
 			.logosubtitle {
-				font-size: 11px;
+				font-size: 0.6875rem;
 				font-family: 'Lato Medium', sans-serif;
 				color: #ffffff;
 				text-transform: uppercase;
@@ -148,12 +148,11 @@
 	.menubuttons {
 		width: 70%;
 		margin: 0 auto;
-		/* background: pink; */
 		min-height:70px;
 	}
 
 	.menubuttons p {
-		font-size: 16px;
+		font-size: 1rem;
 		font-family: "Lato Regular";
 		text-transform: uppercase;
 	}
@@ -168,10 +167,11 @@
 			display: inline-block;
 			vertical-align: middle;
 			margin-top: 25px;
+			padding: 0 10px;
 		}
 		
 		.main {
-			text-align: left;
+			text-align: center;
 			border-right: 1px solid lightgray;
 		}
 
@@ -186,7 +186,7 @@
 		}
 
 		.contacts {
-			text-align: right;
+			text-align: center;
 		}
 
 /* Slider */
@@ -937,6 +937,152 @@
 				text-decoration: none;
 				color: #ae9277;
 			}	
+/* Responsive */
+
+/* @media screen and (max-width:1186px){
+	.logomain {
+	width:35%;
+	margin-top: 15px;
+	}
+
+	.telephone {
+		width:65%;
+	} */
+
+@media screen and (max-width:1186px){
+	.logomain p .logo{
+	line-height: 1;
+	font-size: 2.15rem;
+	}
+
+	.logomain p .logosubtitle{
+	line-height: 1;
+	font-size: 0.5625rem;
+	}
+
+	.logomain {
+	width:40%;
+	margin-top: 15px;
+	}
+
+	.telephone {
+		width:60%;
+	}
+
+	.main, .sale, .rent, .contacts {
+			width: 24%;
+		}
+
+	.menubuttons {
+		width: 75%;	
+	}
+
+@media screen and (max-width:987px){
+
+	.headtext {
+		width: 95%;
+	}
+
+	.logomain {
+	width:35%;
+	margin-top: 15px;
+	}
+
+	.telephone {
+		width:65%;
+		float: left;
+	}
+
+	.menubuttons {
+		width: 95%;	
+	}
+
+
+@media screen and (max-width:768px){
+	.headtext {
+		width: 95%;
+	}
+
+	.menubuttons {
+		width: 95%;	
+	}
+
+	.menubuttons p{
+		font-size: 0.75rem;	
+	}
+
+@media screen and (max-width:677px){
+	.headtext {
+		width: 90%;
+	}
+
+	.logomain {
+	width:60%;
+	margin-top: 15px;
+	}
+	
+	.telephone {
+		padding-top: 15px;
+		width: 40%;
+	}
+
+	.phone{
+		margin: 3px;
+	}
+	
+	.fav {
+		margin: 3px;
+	}
+
+	.icon {
+		margin: 3px;
+	}
+
+@media screen and (max-width:560px){
+	.telephone {
+		width:100%;
+		float: left;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	
+	.logomain {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 15px;
+		text-align: center;
+	}
+
+	.logomain p{
+		margin: 0 auto;
+	}
+
+	.main, .sale, .rent, .contacts {
+			width: 50%;
+			border: none;
+			margin-top:10px;
+			float:left;
+		}
+
+@media screen and (max-width:320px){
+	.telephone {
+		width:100%;
+		float: left;
+		margin-bottom: 15px;
+		text-align: left;
+		text-align: center;
+	}
+	
+	.logomain {
+		width: 100%;
+	}
+	
+	.main, .sale, .rent, .contacts {
+			width: 50%;
+			border: none;
+			margin-top:10px;
+			
+		}
 	
 
 
