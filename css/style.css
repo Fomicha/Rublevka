@@ -200,14 +200,13 @@
 .button-center {
   width: 400px;
   height: 50px;
+  margin: 0 auto;
   background: #333333;
   text-align: center;
-  vertical-align: middle;
-  position: absolute;
   text-transform: none;
   font-weight: normal;
-  left: 280px;
   font-family: 'Lato Medium', sans-serif;
+  padding-top: 1px;
 } 
 
 .button-left {
@@ -282,7 +281,7 @@
 		display: inline-block;
 		margin-top: 5px;
 		border: 1px solid lightgray;
-		padding: 17px 35px;
+		padding: 17px 40px;
 		font-family: 'Lato Light';
 		color: #6f6969;
 		font-size: 14px;
@@ -316,6 +315,10 @@
 		display:inline-block;
 	}
 
+	.clearfixn {
+		clear: both;
+	}
+
 /* Sale Hause */
 .sale-hause {
 	width: 100%;
@@ -337,7 +340,7 @@
 		font-family: 'Literata Regular';
 		color: #333333;
 		text-transform: uppercase;
-		font-size: 36px;
+		font-size: 2.25rem;
 		text-align: center;
 		padding-bottom: 20px;
 		padding-top: 20px;
@@ -371,7 +374,7 @@
 		font-family: 'Literata Regular';
 		color: #333333;
 		text-transform: uppercase;
-		font-size: 36px;
+		font-size: 2.25rem;
 		text-align: center;
 		padding-bottom: 20px;
 		padding-top: 20px;
@@ -395,7 +398,7 @@
 		font-family: 'Literata Regular';
 		color: #333333;
 		text-transform: uppercase;
-		font-size: 36px;
+		font-size: 2.25rem;
 		text-align: center;
 		padding-bottom:20px;
 	}
@@ -427,7 +430,7 @@
 	.text-1 h4 {
 		padding-top: 0;
 		font-family: 'Lato Regular';
-		font-size: 26px;
+		font-size: 1.625rem;
 		color: #ae9277;
 		text-transform: uppercase;
 		margin-top: 0;
@@ -479,7 +482,7 @@
 .text-2 h4 {
 	padding-top: 0;
 	font-family: 'Lato Regular';
-	font-size: 26px;
+	font-size: 1.625rem;
 	color: #ae9277;
 	text-transform: uppercase;
 	margin-top: 0;
@@ -571,7 +574,7 @@
 		font-family: 'Literata Regular';
 		color: #333333;
 		text-transform: uppercase;
-		font-size: 36px;
+		font-size: 2.25rem;
 		text-align: center;
 		padding-top: 30px;
 	}
@@ -600,6 +603,7 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 		background: #ffffff;
+		min-height: 100px;
 	}
 
 	.art-p-img {
@@ -657,7 +661,7 @@
 		width: 33%;
 		min-height: 100px;
 		display: inline-block;
-		margin-left: 5px;
+		margin-left: 4px;
 	}
 
 	.second-artic img {
@@ -670,6 +674,7 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 		background: #ffffff;
+		min-height: 100px;
 	}
 
 	.art-p-img2 {
@@ -742,6 +747,7 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 		background: #ffffff;
+		min-height: 100px;
 	}
 
 	.art-p-img3 {
@@ -793,6 +799,9 @@
 		color: #ae9277;
 	}
 
+	.clearfix88{
+		clear: both;
+	}
 	/* Footer */
 
 .footer {
@@ -910,9 +919,9 @@
 
 	.logomain2 {
 			width:50%;
-			float:left;
-			padding-left: 7px;
-			padding-top: 15px;
+/* 			float:left;
+ */			padding-left: 7px;
+			padding-top: 10px;
 		}
 
 			.logo2 {
@@ -928,26 +937,56 @@
 				font-family: 'Lato Medium', sans-serif;
 				color: #ae9277;
 				text-transform: uppercase;
-				padding-top: -15px;
-				text-align: center;
-				min-height: 5px;
-			}
+/* 				padding-top: -15px;
+ */				text-align: center;
+/* 				min-height: 5px;
+ */			}
 
 			.logomain2 a {
 				text-decoration: none;
 				color: #ae9277;
 			}	
-/* Responsive */
 
-/* @media screen and (max-width:1186px){
-	.logomain {
-	width:35%;
-	margin-top: 15px;
+			.clearfixfoot {
+				clear:both;
+			}
+/* Responsive */
+@media screen and (max-width:1350px){
+	.infonav li img {
+		width: 13px;
 	}
 
-	.telephone {
-		width:65%;
-	} */
+	.infonav ul {
+		width: 100%;
+	}
+
+	.tel {
+		margin-left: 15px;
+	}
+
+@media screen and (max-width:1300px){
+	.search-buttons li {
+		padding: 17px 30px;
+	}
+
+@media screen and (max-width:1250px){
+	.infonav li {
+		margin: 5px;
+	}
+
+	.infonav ul {
+		text-align: center;
+	}
+
+	.footer-nav {
+		width: 95%;
+	}
+
+	.logomain2{
+		width:100%;
+		float: right;
+	}
+
 
 @media screen and (max-width:1186px){
 	.logomain p .logo{
@@ -970,12 +1009,74 @@
 	}
 
 	.main, .sale, .rent, .contacts {
-			width: 24%;
+		width: 24%;
 		}
 
 	.menubuttons {
 		width: 75%;	
 	}
+
+	.search-buttons li {
+		padding: 17px 15px 17px 15px;
+	}
+
+@media screen and (max-width:1024px){
+	.text-1 {
+		width: 100%;
+		padding-top: 10px;
+		
+	}
+
+	.text-1 h4{
+		padding-left: 0;
+	}
+
+	.text-2 h4{
+		padding-left: 0;
+	}
+
+	.text-2 {
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	.divimg {
+		clear: left;
+		text-align:center;
+
+	}	
+
+	.logomain2 {
+		width: 100%;
+		float: right;
+		padding-right: 15px;
+	}
+
+	.teltel b {
+		font-size: 14px;
+	}
+
+	.mark b {
+		font-size: 14px;
+	}
+
+	.bob {
+		display:block;
+		margin-bottom: 10px;
+	}
+
+	.bob1 {
+		margin-bottom: 10px;
+	}
+
+	.tel {
+		margin-left:0;
+	}
+
+	.footer-nav {
+		width: 77%;
+	}
+
 
 @media screen and (max-width:987px){
 
@@ -997,6 +1098,34 @@
 		width: 95%;	
 	}
 
+	.search-buttons {
+		width: 95%;
+	}
+
+	.saletitle h2 {
+		font-size: 1.75rem;
+	}
+
+	.maptitle h2 {
+		font-size: 1.75rem;
+	}	
+
+	.hist-content h2 {
+		font-size: 1.75rem;
+	}
+
+	.articles-title h2 {
+		font-size: 1.75rem;
+	}
+
+	.artic {
+		width: 80%;
+	}
+
+@media screen and (max-width:850px){
+	.artic {
+		width: 87%;
+	}
 
 @media screen and (max-width:768px){
 	.headtext {
@@ -1011,14 +1140,84 @@
 		font-size: 0.75rem;	
 	}
 
+	.search-buttons li {
+
+		text-align: center;
+	}
+	
+	.search-search {
+	clear: left;
+	float: left;
+	}
+	
+	.search-buttons {
+		text-align: center;
+	}
+
+	.saletitle {
+		width: 95%;
+	}
+
+	.maptitle {
+		width: 95%;
+
+	}	
+
+	.hist-content {
+		width: 95%;
+	}
+
+	.articles-title {
+		width: 95%;
+	}
+
+	.divimg {
+		width: 100%;
+	}
+
+	.divimg2 {
+		width: 100%;
+		    padding-left: 0px;
+	}
+
+	.infonav {
+		width: 95%;
+	}
+
+	.infonav {
+		width: 95%;
+	}
+
+	.artic {
+		width: 95%;
+	}
+
+	.first-artic {
+		width: 49%;
+	}
+
+	.second-artic {
+		width: 49%;
+	}
+	
+	.third-artic {
+		width: 49%;
+		float: left;
+		margin-top: 15px;
+	}
+
+	.footer-nav {
+		width: 95%;
+	}
+
 @media screen and (max-width:677px){
 	.headtext {
 		width: 90%;
 	}
 
 	.logomain {
-	width:60%;
-	margin-top: 15px;
+		width:60%;
+		margin-top: 15px;
 	}
 	
 	.telephone {
@@ -1036,6 +1235,56 @@
 
 	.icon {
 		margin: 3px;
+	}
+
+	.footer-left {
+    	width: 68%;
+    }
+
+    .footer-right {
+    width: 32%;
+	}	
+
+ @media screen and (max-width:620px){ 
+ 
+	.help {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.star {
+		display: block;
+		margin-left: 0;
+	}
+
+	.tel {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.loc {
+		display: block;
+		margin-left: 0;
+	}
+
+	.footer-left {
+    	width: 55%;
+    }
+
+    .footer-right {
+    width: 45%;
+	}
+
+	.logomain2 {
+		padding-top: 50px;
+	}
+
+	.footer-left {
+    	width: 50%;
+    }
+
+    .footer-right {
+    width: 50%;
 	}
 
 @media screen and (max-width:560px){
@@ -1058,11 +1307,94 @@
 	}
 
 	.main, .sale, .rent, .contacts {
-			width: 50%;
-			border: none;
-			margin-top:10px;
-			float:left;
-		}
+		width: 50%;
+		border: none;
+		margin-top:10px;
+		float:left;
+	}
+
+	.caption h3 {
+		font-size: 2rem;
+	}
+
+	.button-left h5 {
+		font-size: 1.3rem;
+	}
+
+	.button-left {
+		width: 250px;
+		height: 35px;
+		padding-top: 0.5px;
+	}
+
+	.button-right h5 {
+		font-size: 1.3rem;
+	}
+
+	.button-right {
+		width: 250px;
+		height: 35px;
+		padding-top: 0.5px;
+	}
+	
+	.button-center h5 {
+		font-size: 1.3rem;
+	}
+
+	.button-center {
+		width: 250px;
+		height: 35px;
+		padding-top: 0.5px;
+	}
+
+	.info-museum p {
+		padding-left:0;
+	}
+
+@media screen and (max-width:479px){
+	.first-artic {
+		width: 100%;
+	}
+
+	.second-artic {
+		width: 100%;
+		margin-top: 15px;
+	}
+	
+	.third-artic {
+		width: 100%;
+		float: left;
+		margin-top: 15px;
+	}
+
+	.art-p p {
+		padding-top: 12px;
+	}
+
+	.art-p2 p {
+		padding-top: 12px;
+	}
+
+	.art-p3 p {
+		padding-top: 12px;
+	}
+
+@media screen and (max-width:400px){
+	.logomain2{
+		display:none;
+	}
+
+	.footer-left {
+		width:100%;
+	}
+
+	.footer-nav {
+		width: 70%;
+	}
+
+	.footer-right {
+		display:none;
+	}
 
 @media screen and (max-width:320px){
 	.telephone {
@@ -1081,9 +1413,28 @@
 			width: 50%;
 			border: none;
 			margin-top:10px;
-			
 		}
+
+	.slider .slides li .caption {
+		left: 5%;
+		width:90%;
+	}
+
+	.caption h3 {
+		font-size: 1.6rem;
+	}
+
+	.button-left h5 {
+		font-size: 1.1rem;
+	}
 	
+	.button-right h5 {
+		font-size: 1.1rem;
+	}
+
+	.button-center h5 {
+		font-size: 1.1rem;
+	}
 
 
 
