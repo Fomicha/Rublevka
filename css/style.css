@@ -1076,7 +1076,10 @@
 	.footer-nav {
 		width: 77%;
 	}
-
+	
+	.loc {
+		margin-left: 16px;
+	}
 
 @media screen and (max-width:987px){
 
@@ -1149,10 +1152,10 @@
 	clear: left;
 	float: left;
 	}
-	
+/* 	
 	.search-buttons {
 		text-align: center;
-	}
+	} */
 
 	.saletitle {
 		width: 95%;
@@ -1359,6 +1362,7 @@
 	.second-artic {
 		width: 100%;
 		margin-top: 15px;
+		margin-left: 0;
 	}
 	
 	.third-artic {
@@ -1389,14 +1393,27 @@
 	}
 
 	.footer-nav {
-		width: 70%;
+		width: 78%;
 	}
 
 	.footer-right {
 		display:none;
 	}
 
+	.help {
+		width: 190px;
+	}
+
+	.star {
+		width: 190px;
+	}
+
 @media screen and (max-width:320px){
+
+	.second-artic {
+		margin-left: 0;
+	}	
+
 	.telephone {
 		width:100%;
 		float: left;
@@ -1410,10 +1427,10 @@
 	}
 	
 	.main, .sale, .rent, .contacts {
-			width: 50%;
-			border: none;
-			margin-top:10px;
-		}
+		width: 50%;
+		border: none;
+		margin-top:10px;
+	}
 
 	.slider .slides li .caption {
 		left: 5%;
@@ -1436,6 +1453,15 @@
 		font-size: 1.1rem;
 	}
 
+	.left-align {
+	    text-align: center;
+	}
+
+    .right-align {
+	    text-align: center;
+	}
+
+}
 
 
 
