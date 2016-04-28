@@ -1,7 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
 
 /* Fonts */
 @font-face {
@@ -256,68 +259,131 @@
 
 /* Search */
 .search {
-	width: 100%;
-	min-height: 70px;
+  width: 100%;
+  min-height: 70px;
+}
+
+.search-buttons {
+  width: 90%;
+  min-height: 70px;
+  margin: 0 auto;
+}
+
+.select1 {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 325px;
+  color: #6f6969;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.select1 .placeholder1 {
+  position: relative;
+  display: block;
+  z-index: 1;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+.select1 .placeholder1:hover {
+  background: #34383c;
+}
+
+.select1 .placeholder1:after {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'FontAwesome';
+  content: '\f078';
+  z-index: 10;
+}
+
+.select1.is-open .placeholder:after {
+  content: '\f077';
+}
+
+.select1.is-open ul {
+  display: block;
+}
+
+.select1.select--white .placeholder1 {
+  background: #fff;
+  color: #999;
+}
+
+.select1.select--white .placeholder1:hover {
+  background: #fafafa;
+}
+
+.select1 ul {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+  z-index: 1000;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+}
+
+.select1 ul li {
+  display: block;
+  text-align: left;
+  padding: 0.8em 1em 0.8em 1em;
+  color: #999;
+  cursor: pointer;
+}
+
+.select1 ul li:hover {
+  background: #6f6969;
+  color: #fff;
+}
+
+#twoselect,
+#fiveselect,
+#fourselect,
+#threeselect {
+  width: 130px;
+}
+
+#oneselect {
+  width: 220px;
+}
+
+.search-search {
+	width: 120px;
+	height: 49px ;
+	background: #ae9277;
+	float: right;
+	position: relative;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: "Lato Regular";
+	text-align: center;
+	padding-top: 14px;
+}
+
+.search-search img {
+	padding-left: 16px;
 	
 }
 
-	.search-buttons {
-		width: 70%;
-		min-height: 70px;
-		margin: 0 auto;
-	}
+.search-search p {
+	display:inline-block;
+}
 
-	.left-buttons {
-		float:left;
-	}
-
-	.search-buttons ul {
-		font-size:0; 
-	    line-height:0; 
-	    letter-spacing:-1px; 
-	}
-
-	.search-buttons li {
-		display: inline-block;
-		margin-top: 5px;
-		border: 1px solid lightgray;
-		padding: 17px 40px;
-		font-family: 'Lato Light';
-		color: #6f6969;
-		font-size: 14px;
-		line-height:normal;
-	    letter-spacing:normal;
-	    display: -moz-inline-stack !important;
-	    display:inline-block;
-
-	}
-	
-	.search-search {
-		width: 120px;
-		height: 53px ;
-		background: #ae9277;
-		float: right;
-		position: relative;
-		top: 5px;
-		color: #ffffff;
-		font-size: 16px;
-		font-family: "Lato Regular";
-		text-align: center;
-		padding-top: 14px;
-	}
-
-	.search-search img {
-		padding-left: 16px;
-		
-	}
-
-	.search-search p {
-		display:inline-block;
-	}
-
-	.clearfixn {
-		clear: both;
-	}
+.clearfixn {
+	clear: both;
+}
 
 /* Sale Hause */
 .sale-hause {
