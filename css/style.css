@@ -257,14 +257,19 @@
  	color:#f3f3f3;
  }
 
+ .caption1, .caption2, .caption3, .caption4 img{
+ 	height: 100%;
+ }
+
 /* Search */
 .search {
   width: 100%;
   min-height: 70px;
+  margin-top: 50px;
 }
 
 .search-buttons {
-  width: 90%;
+  width: 70%;
   min-height: 70px;
   margin: 0 auto;
 }
@@ -369,12 +374,11 @@
 	font-size: 16px;
 	font-family: "Lato Regular";
 	text-align: center;
-	padding-top: 14px;
+	padding: 1em;
 }
 
 .search-search img {
 	padding-left: 16px;
-	
 }
 
 .search-search p {
@@ -416,10 +420,6 @@
 		width: 100%;
 		margin-bottom: 40px;	
 	}
-
-
-
-
 
 /* MAP */
 .map {
@@ -891,7 +891,7 @@
 	}
 
 		.help {
-			width: 150px;
+			width: 155px;
 			height: 25px;
 			background: #ffffff;
 			display: inline-block;
@@ -910,7 +910,7 @@
 		}
 
 		.star {
-			width: 160px;
+			width: 155px;
 			height: 25px;
 			background: #ffffff;
 			display: inline-block;
@@ -960,7 +960,7 @@
 				min-height: 25px;
 				display: inline-block;
 				margin-left: 5px;
-				;
+				
 			}
 
 			.mark {
@@ -1035,7 +1035,11 @@
 		padding: 17px 30px;
 	}
 
-@media screen and (max-width:1250px){
+@media screen and (max-width:1251px){
+
+	.search-buttons {
+  width: 95%;
+}
 	.infonav li {
 		margin: 5px;
 	}
@@ -1055,6 +1059,10 @@
 
 
 @media screen and (max-width:1186px){
+
+	.search-search {
+    height: 47px;
+}
 	.logomain p .logo{
 	line-height: 1;
 	font-size: 2.15rem;
@@ -1087,10 +1095,15 @@
 	}
 
 @media screen and (max-width:1024px){
+
+		.search-search {
+    height: 46px;
+}
+
+
 	.text-1 {
 		width: 100%;
-		padding-top: 10px;
-		
+		padding-top: 10px;	
 	}
 
 	.text-1 h4{
@@ -1109,7 +1122,6 @@
 	.divimg {
 		clear: left;
 		text-align:center;
-
 	}	
 
 	.logomain2 {
@@ -1126,28 +1138,19 @@
 		font-size: 14px;
 	}
 
-	.bob {
-		display:block;
-		margin-bottom: 10px;
-	}
-
-	.bob1 {
-		margin-bottom: 10px;
-	}
-
-	.tel {
-		margin-left:0;
-	}
-
 	.footer-nav {
 		width: 77%;
 	}
 	
 	.loc {
-		margin-left: 16px;
+		margin-top: 5px;
 	}
 
 @media screen and (max-width:987px){
+
+		.search-buttons {
+	width:95%;
+}
 
 	.headtext {
 		width: 95%;
@@ -1165,10 +1168,6 @@
 
 	.menubuttons {
 		width: 95%;	
-	}
-
-	.search-buttons {
-		width: 95%;
 	}
 
 	.saletitle h2 {
@@ -1191,10 +1190,37 @@
 		width: 80%;
 	}
 
+@media screen and (max-width:925px){
+
+	.search-search {
+		display: block;
+		float: left;
+		margin: 5px;
+	}
+
+	.search-buttons {
+	width:85%;
+}
+
+.select1 {
+	margin: 5px ;
+}
+
 @media screen and (max-width:850px){
 	.artic {
 		width: 87%;
 	}
+
+@media screen and (max-width:858px){
+	.tel {
+		margin: 6px;	
+	}
+
+	.loc {
+		margin: 6px;
+		margin-bottom: 13px;
+	}
+}
 
 @media screen and (max-width:768px){
 	.headtext {
@@ -1214,14 +1240,6 @@
 		text-align: center;
 	}
 	
-	.search-search {
-	clear: left;
-	float: left;
-	}
-/* 	
-	.search-buttons {
-		text-align: center;
-	} */
 
 	.saletitle {
 		width: 95%;
@@ -1329,11 +1347,15 @@
 	.tel {
 		display: block;
 		margin-bottom: 5px;
+		margin: 6px;
+
 	}
 
 	.loc {
 		display: block;
 		margin-left: 0;
+		margin: 6px;
+		margin-bottom: 13px;
 	}
 
 	.footer-left {
@@ -1468,11 +1490,21 @@
 
 	.help {
 		width: 190px;
+		margin: 6px;
 	}
 
 	.star {
 		width: 190px;
+		margin: 6px;
 	}
+
+	#twoselect,
+#fiveselect,
+#fourselect,
+#threeselect {
+  width: 220px;
+}
+
 
 @media screen and (max-width:320px){
 
