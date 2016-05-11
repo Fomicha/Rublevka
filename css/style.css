@@ -377,6 +377,11 @@
 	padding: 1em;
 }
 
+.search-search a {
+	text-decoration: none;
+	color: #fff;
+}
+
 .search-search img {
 	padding-left: 16px;
 }
@@ -491,6 +496,12 @@
 		width: 40%;
 		float:right;
 		display: inline-block;
+	}
+
+	.effect1 {
+		-webkit-box-shadow: 0 15px 10px -6px #777;
+		-moz-box-shadow:    0 15px 10px -6px #777;
+		box-shadow:         0 15px 10px -6px #777;
 	}
 
 	.text-1 h4 {

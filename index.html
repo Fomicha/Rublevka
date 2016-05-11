@@ -107,7 +107,7 @@
 	<!-- Search -->
 	<div class="search">
   		<div class="search-buttons">    
-			<div class="select1 select--white" id="oneselect">
+		<div class="select1 select--white" id="oneselect">
 			  <span class="placeholder1">Удаленность от МКАД</span>
 			  <ul class="selectul">
 			    <li>5 км</li>
@@ -160,10 +160,12 @@
 			  </ul>
 			  <input type="hidden" name="changemetoo"/>
 			</div>
+			<a href="#">
 			<div class="search-search">
 				<p>Поиск&nbsp;</p>
 				<p><img src="icons/right.png"></p>
 			</div>
+			</a>
 			<div class="clearfixn"></div>
   		</div>
   	</div>
@@ -193,7 +195,7 @@
 			<h2>О Рублево-Успенском шоссе</h2>
 			<div class="hist-pic">
 				<div class="divimg">
-					<p><img src="images/11.png"></p>
+					<p><img class="materialboxed effect1" src="images/11.png"></p>
 				</div>
 				<!-- <div class="shadow"></div> -->
 				<div class="text-1">
@@ -211,7 +213,7 @@
 					<p>Дорога Москва — Звенигород появилась, предположительно, в начале XV века. С середины XVI века местности вдоль Рублёвки стали вотчинами царя.</p>
 				</div>	
 				<div class="divimg2">
-					<img src="images/12.png">
+					<img class="materialboxed effect1" src="images/12.png">
 				</div>
 				<div class="clearfix3"></div>
 			</div>
@@ -355,8 +357,10 @@
 
 <script>
  $(document).ready(function(){
-      $('.slider').slider({});
-    });
+    $('.slider').slider({});
+    $('.materialboxed').materialbox();
+  });
+        
 </script>
 
 </body>
